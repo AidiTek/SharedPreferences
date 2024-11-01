@@ -56,5 +56,12 @@ class MainActivity : AppCompatActivity() {
             binding.checkBox.isChecked = isAdult
         }
 
+        binding.btnDelete.setOnClickListener {
+
+            binding.edAge.setText(null)
+            binding.edName.setText(null)
+            binding.checkBox.isChecked = false
+
+        }
     }
 }

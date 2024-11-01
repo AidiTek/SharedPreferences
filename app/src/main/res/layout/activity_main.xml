@@ -40,21 +40,29 @@
         android:id="@+id/btn_Load"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Load"
-        android:layout_marginTop="44dp"
         android:layout_marginLeft="32dp"
+        android:text="Load"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edAge" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <Button
         android:id="@+id/btn_Save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
         app:layout_constraintStart_toEndOf="@+id/btn_Load"
-        app:layout_constraintTop_toBottomOf="@+id/edAge" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:text="Delet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_Save" />
+
 
 
 
